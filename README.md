@@ -19,12 +19,14 @@ the img folder includes example pictures of the CLEVR dataset and the stats fold
 - All bash scripts and commands must be executed from the src folder
 
 ### Setup
-First, create a conda enviorment using the provided enviroment.yml file and run the following command: 
+First, create a conda enviorment using the provided environment.yml file and run the following command: 
 ```bash
 pip install -r requirements.txt
 ```
 
-Second, follow the CLEVR data preprocessing [instructions](https://github.com/facebookresearch/clevr-iep/blob/master/TRAINING.md#preprocessing-clevr).
+Second, run the download_dataset.sh script located in scripts folder to download the CLEVR dataset.
+
+Third, run the preprocess_data.sh script located in scripts folder to preprocess the data.
 
 ### Training
 The below script has the hyperparameters and settings to reproduce FiBN CLEVR results:
@@ -37,9 +39,9 @@ Training a FiBN CLEVR model should take ~20 hours on an average GPU
 
 There is an interactive command line tool for use with the below command/script.
 ```bash
-python run_model.py --program_generator <FiLM Generator filepath> --execution_engine <FiLMed Network filepath>
+python run_model.py --program_generator <model checkpoint> --execution_engine <model checkpoint>
 ```
-When FiLM Generator filepath and FiLMed Network filepath are the same.
+When both checkpoints are the same.
 
 By default, the command runs on [this CLEVR image](https://github.com/gilzim/film/blob/CBN_layers/img/CLEVR_val_000017.png), but you may modify which image to use via command line flag to test on any CLEVR image.
 
