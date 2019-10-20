@@ -1,0 +1,8 @@
+name: fibn
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.5
+  - pip=10.0.1
+  - wheel=0.31.1
