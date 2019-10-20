@@ -1,7 +1,7 @@
 #!/bin/bash
 
-checkpoint_path="data/cbn_layer3_batch96_dropout20.pt"
-log_path="data/cbn_layer3_batch96_dropout20.log"
+checkpoint_path="data/fibn.pt"
+log_path="data/fibn.log"
 python scripts/train_model.py \
   --checkpoint_path $checkpoint_path \
   --model_type FiLM \
@@ -33,7 +33,7 @@ python scripts/train_model.py \
   --module_input_proj 1 \
   --module_residual 1 \
   --module_dim 128 \
-  --module_dropout 20e-2 \
+  --module_dropout 0 \
   --module_stem_kernel_size 3 \
   --module_kernel_size 3 \
   --module_batchnorm_affine 0 \
