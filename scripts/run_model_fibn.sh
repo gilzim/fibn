@@ -8,5 +8,5 @@ python scripts/run_model.py \
 --input_features_h5 data/val_features.h5 \
 --num_samples 3000 \
 --batch_size 100 \
---output_program_stats_dir img/stats/FiBN \
+--output_program_stats_dir img/stats \
 | tee $log_path
