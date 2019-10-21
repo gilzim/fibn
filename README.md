@@ -20,6 +20,7 @@ and the train folder which contains .sh scripts for training the FiBN model.
 - The train.py implaments the training loop
 - The run_model.py is used to run the model from a given checkpoint on samples
 
+#### img
 The img folder includes an example picture of the CLEVR dataset and the stats folder which contains gammas and betas distributions of the FiBN model.
 
 ### Important Notes
