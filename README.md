@@ -1,10 +1,13 @@
 # FiBN: Visual Reasoning with a General Conditioning Layer and Conditional Batch Normalization
 
-### Folder Structure
+### Src Folder Structure
 
 This code is a fork from the code for "FiLM: Visual Reasoning with a General Conditioning Layer" available [here](https://github.com/ethanjperez/film).
+The src folder contains 3 folders and 2 file for setup
 
-the src folder contains 3 folders: vr, scripts and img.
+#### environment & requirements
+Both environment.yml and requirements.txt are used during the setup to prepare the virtual environment for the code
+
 #### vr
 The vr folder includes .py files for preprocessing data, a utils.py file for loading models from checkpoints
 and the models package which contatins the implementations of the different layers and models.
