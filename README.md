@@ -3,7 +3,6 @@
 ### Src Folder Structure
 
 This code is a fork from the code for "FiLM: Visual Reasoning with a General Conditioning Layer" available [here](https://github.com/ethanjperez/film).
-The src folder contains 3 folders and 2 file for setup
 
 #### environment & requirements
 Both environment.yml and requirements.txt are used during the setup to prepare the virtual environment for the code
