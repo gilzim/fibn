@@ -5,12 +5,20 @@
 This code is a fork from the code for "FiLM: Visual Reasoning with a General Conditioning Layer" available [here](https://github.com/ethanjperez/film).
 
 the src folder contains 3 folders: vr, scripts and img.
-
+#### vr
 The vr folder includes .py files for preprocessing data, a utils.py file for loading models from checkpoints
 and the models package which contatins the implementations of the different layers and models.
+##### Important files
+- Our CBN layer is located in vr/models/cbn_layer.py
+- The linguistic pipeline(GRU) is located in vr/models/film_gen.py
+- The visual pipeline(FiBN) is located in vr/models/filmed_net.py
 
+#### scripts
 The scripts folder includes .py files for preprocessing the data and for training and running models 
 and the train folder which contains .sh scripts for training the FiBN model.
+##### Important files
+- The train.py implaments the training loop
+- The run_model.py is used to run the model from a given checkpoint on samples
 
 The img folder includes an example picture of the CLEVR dataset and the stats folder which contains gammas and betas distributions of the FiBN model.
 
