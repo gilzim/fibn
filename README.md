@@ -6,13 +6,13 @@ This code is a fork from the code for "FiLM: Visual Reasoning with a General Con
 
 the src folder contains 3 folders: vr, scripts and img.
 
-the vr folder includes .py files for preprocessing data, a utils.py file for loading models from checkpoints
+The vr folder includes .py files for preprocessing data, a utils.py file for loading models from checkpoints
 and the models package which contatins the implementations of the different layers and models.
 
-the scripts folder includes .py files for preprocessing the data, .py files for training and running models 
-and  the train folder which contains .sh scripts for training FiLM and FiBN models.
+The scripts folder includes .py files for preprocessing the data and for training and running models 
+and the train folder which contains .sh scripts for training the FiBN model.
 
-the img folder includes example pictures of the CLEVR dataset and the stats folder which contains gammas and betas distributions of the FiBN model.
+The img folder includes an example picture of the CLEVR dataset and the stats folder which contains gammas and betas distributions of the FiBN model.
 
 ### Important Notes
 - The code can only run on the Linux OS
@@ -35,7 +35,7 @@ sh scripts/train/fibn.sh
 ```
 The above script must use **2** Gpus.
 
-Training a FiBN CLEVR model should take ~20 hours on an average GPU.
+Training a FiBN CLEVR model should take ~20 hours on 2 average GPUs.
 
 ### Running models
 Any script/command must use only **1** GPU
@@ -44,9 +44,9 @@ There is an interactive command line tool for use with the below command/script.
 ```bash
 python run_model.py --program_generator <model checkpoint> --execution_engine <model checkpoint>
 ```
-When both checkpoints are the same.
+When both checkpoint paths are the same.
 
-By default, the command runs on [this CLEVR image](https://github.com/gilzim/film/blob/CBN_layers/img/CLEVR_val_000017.png), but you may modify which image to use via command line flag to test on any CLEVR image.
+By default, the command runs on [this CLEVR image](https://github.com/gilzim/fibn/blob/master/img/CLEVR_val_000017.png), but you may modify which image to use via command line flag to test on any CLEVR image.
 
 We added the script run_model_fibn.sh which runs on a batch of 3000 samples. It returns the accuracy of the model
 and saves different gammas & bettas distributions in img/stats.
