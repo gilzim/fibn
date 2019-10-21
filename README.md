@@ -33,7 +33,7 @@ The below script has the hyperparameters and settings to reproduce FiBN CLEVR re
 ```bash
 sh scripts/train/fibn.sh
 ```
-Run the above script must use **2** Gpus.
+The above script must use **2** Gpus.
 
 Training a FiBN CLEVR model should take ~20 hours on an average GPU.
 
