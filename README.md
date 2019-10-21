@@ -33,9 +33,12 @@ The below script has the hyperparameters and settings to reproduce FiBN CLEVR re
 ```bash
 sh scripts/train/fibn.sh
 ```
-Training a FiBN CLEVR model should take ~20 hours on an average GPU
+Run the above script must use **2** Gpus.
+
+Training a FiBN CLEVR model should take ~20 hours on an average GPU.
 
 ### Running models
+Any script/command must use only **1** GPU
 
 There is an interactive command line tool for use with the below command/script.
 ```bash
@@ -46,4 +49,4 @@ When both checkpoints are the same.
 By default, the command runs on [this CLEVR image](https://github.com/gilzim/film/blob/CBN_layers/img/CLEVR_val_000017.png), but you may modify which image to use via command line flag to test on any CLEVR image.
 
 We added the script run_model_fibn.sh which runs on a batch of 3000 samples. It returns the accuracy of the model
-and saves different gammas & bettas distributions in img/stats
+and saves different gammas & bettas distributions in img/stats.
